@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f38c3d95-ed07-4950-820c-ce7c145d3dca" name="Changes" comment="1 laba classes added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f38c3d95-ed07-4950-820c-ce7c145d3dca" name="Changes" comment="2 laba new classes added, tester section" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="vitalina-1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -95,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761332861209</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2 laba new classes added, tester section">
+      <option name="closed" value="true" />
+      <created>1764346303207</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764346303207</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +118,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add file" />
     <MESSAGE value="1 laba classes added" />
-    <option name="LAST_COMMIT_MESSAGE" value="1 laba classes added" />
+    <MESSAGE value="2 laba new classes added, tester section" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 laba new classes added, tester section" />
   </component>
 </project>
