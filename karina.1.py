@@ -2,7 +2,6 @@ import time
 import random
 import json
 
-
 class Question:
     def __init__(self, text, options=None, correct=None, difficulty=1, topic="general"):
         self.text = text
@@ -10,7 +9,6 @@ class Question:
         self.correct = correct
         self.difficulty = difficulty
         self.topic = topic
-
     def ask(self):
         print("\n────────────────────────────────────────")
         print(self.text)
@@ -159,7 +157,3 @@ class TestSystem:
             else:
                 print("Невірний вибір — спробуйте ще раз.")
 
-
-if __name__ == "__main__":
-    system = TestSystem()
-    system.menu()
