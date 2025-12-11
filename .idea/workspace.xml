@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f38c3d95-ed07-4950-820c-ce7c145d3dca" name="Changes" comment="add 6 classes and check">
-      <change afterPath="$PROJECT_DIR$/lab_3__julia.py" afterDir="false" />
+    <list default="true" id="f38c3d95-ed07-4950-820c-ce7c145d3dca" name="Changes" comment="Added inheritance and polymorphism for questions.&#10;Implemented show_question(), check_answer(), and evaluate() in subclasses">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761334027982</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added inheritance and polymorphism for questions.&#10;Implemented show_question(), check_answer(), and evaluate() in subclasses">
+      <option name="closed" value="true" />
+      <created>1765457685007</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1765457685007</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add file" />
     <MESSAGE value="add 6 classes and check" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 6 classes and check" />
+    <MESSAGE value="Added inheritance and polymorphism for questions.&#10;Implemented show_question(), check_answer(), and evaluate() in subclasses" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added inheritance and polymorphism for questions.&#10;Implemented show_question(), check_answer(), and evaluate() in subclasses" />
   </component>
 </project>
