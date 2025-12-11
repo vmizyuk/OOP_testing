@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="f38c3d95-ed07-4950-820c-ce7c145d3dca" name="Changes" comment="Added inheritance and polymorphism for questions.&#10;Implemented show_question(), check_answer(), and evaluate() in subclasses" />
     <list default="true" id="f38c3d95-ed07-4950-820c-ce7c145d3dca" name="Changes" comment="2 laba new classes added, tester section">
       <change afterPath="$PROJECT_DIR$/lab3_tester.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -51,6 +52,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.julia.executor": "Run",
+    "Python.lab_3__julia.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "julia__branch"
     "Python.editor_classes.executor": "Run",
     "Python.lab2_tester.executor": "Run",
     "Python.lab3_tester.executor": "Run",
@@ -106,6 +112,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764346813230</updated>
     </task>
+    <task id="LOCAL-00004" summary="Added inheritance and polymorphism for questions.&#10;Implemented show_question(), check_answer(), and evaluate() in subclasses">
+      <option name="closed" value="true" />
+      <created>1765457685007</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1765457685007</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added inheritance and polymorphism for questions.&#10;Implemented show_question(), check_answer(), and evaluate() in subclasses">
+      <option name="closed" value="true" />
+      <created>1765458962561</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765458962561</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
@@ -122,6 +145,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add file" />
+    <MESSAGE value="add 6 classes and check" />
+    <MESSAGE value="Added inheritance and polymorphism for questions.&#10;Implemented show_question(), check_answer(), and evaluate() in subclasses" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added inheritance and polymorphism for questions.&#10;Implemented show_question(), check_answer(), and evaluate() in subclasses" />
     <MESSAGE value="1 laba classes added" />
     <MESSAGE value="2 laba new classes added, tester section" />
     <option name="LAST_COMMIT_MESSAGE" value="2 laba new classes added, tester section" />
