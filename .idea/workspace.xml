@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f38c3d95-ed07-4950-820c-ce7c145d3dca" name="Changes" comment="Added inheritance and polymorphism for questions.&#10;Implemented show_question(), check_answer(), and evaluate() in subclasses" />
+    <list default="true" id="f38c3d95-ed07-4950-820c-ce7c145d3dca" name="Changes" comment="Added inheritance and polymorphism for questions.&#10;Implemented show_question(), check_answer(), and evaluate() in subclasses">
+      <change beforePath="$PROJECT_DIR$/julia_lab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_3_julia.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
