@@ -1,7 +1,6 @@
 from typing import List
 from questions import Question, TextQuestion, ChoiceQuestion, RatingQuestion, MatchingQuestion, MultipleChoiceQuestion
 
-# -------------------------- BASE TEST --------------------------
 
 class Test:
     def __init__(self, name: str, description: str = ""):
@@ -32,8 +31,6 @@ class Test:
         return found
 
 
-# -------------------------- INHERITANCE --------------------------
-
 class BasicTest(Test):
     """Звичайний тест"""
     pass
@@ -52,8 +49,6 @@ class AdaptiveTest(Test):
             self.current_difficulty = question.difficulty
             print(f"Новий рівень складності тесту: {self.current_difficulty}")
 
-
-# -------------------------- TEST EDITOR --------------------------
 
 class TestEditor:
     def __init__(self):
