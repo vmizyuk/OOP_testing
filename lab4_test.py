@@ -71,7 +71,7 @@ class AdaptiveSession(BaseSession):
 
 
 # ======================================================
-#         🔥 PATTERN: FACTORY METHOD (Фабрика)
+#         PATTERN: FACTORY METHOD (Фабрика)
 # ======================================================
 
 class SessionFactory:
