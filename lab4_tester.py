@@ -1,6 +1,7 @@
 from typing import List, Optional
 from questions import Question
-from lab3_tester import Test, BasicTest, AdaptiveTest
+from test import Test, BasicTest, AdaptiveTest
+
 
 class TestBuilder:
     def __init__(self):
