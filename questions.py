@@ -141,10 +141,10 @@ class Quiz:
                 answer = input("Ваша відповідь: ")
 
             if q.check_answer(answer):
-                print("✔ Вірно!\n")
+                print("Вірно!\n")
                 score += 1
             else:
-                print("✘ Помилка.\n")
+                print("Помилка.\n")
 
         print(f"Підсумок: {score} із {len(self.questions)}")
         return score
