@@ -1,165 +1,76 @@
-from abc import ABC, abstractmethod
-from typing import List, Dict
 import time
+import random
 
-class Question(ABC):
-    def __init__(self, text: str, correct_answer=None, topic: str = "", difficulty: int = 1):
+# -------------------------- QUESTION FROM L2 --------------------------
+
+class Question:
+    def __init__(self, text, options=None, correct=None, difficulty=1):
         self.text = text
-        self.correct_answer = correct_answer
-        self.topic = topic
+        self.options = options or []
+        self.correct = correct
         self.difficulty = difficulty
 
-    @abstractmethod
-    def show_question(self):
-        pass
-
-    @abstractmethod
-    def check_answer(self, user_answer):
-        pass
-
-class TextQuestion(Question):
-    def __init__(
-        self,
-        text: str,
-        correct_answer: str,
-        topic: str = "",
-        difficulty: int = 1,
-        partial_allowed: bool = True
-    ):
-        super().__init__(text, correct_answer, topic, difficulty)
-        self.partial_allowed = partial_allowed
-
-    def show_question(self):
+    def show(self):
         print(self.text)
+        for i, opt in enumerate(self.options, 1):
+            print(f"{i}) {opt}")
 
-    def check_answer(self, user_answer):
-        user_answer = user_answer.strip().lower()
-        correct = str(self.correct_answer).lower()
+    def check(self, answer):
+        try:
+            return self.options[int(answer)-1].lower() == self.correct.lower()
+        except:
+            return False
 
-        if user_answer == correct:
-            return True
-        if self.partial_allowed and user_answer in correct:
-            return True
-        return False
-class Test:
-    def __init__(self, name: str, description: str = ""):
-        self.name = name
-        self.description = description
-        self.questions: List[Question] = []
 
-    def add_question(self, question: Question):
-        self.questions.append(question)
+# -------------------------- BASE SESSION --------------------------
 
-    def show_all_questions(self):
-        print(f"\nПитання тесту '{self.name}':")
-        if not self.questions:
-            print("Немає питань.")
-            return
-        for i, q in enumerate(self.questions, start=1):
-            print(f"{i}. {q.text}")
+class BaseSession:
+    def __init__(self, questions):
+        self.questions = questions
 
-    def remove_question(self, index: int):
-        if 0 <= index < len(self.questions):
-            self.questions.pop(index)
-        else:
-            print("Невірний індекс питання.")
-
-    def find_questions(self, keyword: str):
-        keyword = keyword.lower()
-        return [q for q in self.questions if keyword in q.text.lower()]
-
-class BasicTest(Test):
-    """Звичайний тест"""
-    pass
-
-class AdaptiveTest(Test):
-    """Адаптивний тест"""
-
-    def __init__(self, name: str, description: str = ""):
-        super().__init__(name, description)
-        self.current_difficulty = 1
-
-    def add_question(self, question: Question):
-        super().add_question(question)
-        if question.difficulty > self.current_difficulty:
-            self.current_difficulty = question.difficulty
-
-class TestEditor:
-    def __init__(self):
-        self.tests: List[Test] = []
-
-    def create_basic(self, name: str, description: str = "") -> BasicTest:
-        test = BasicTest(name, description)
-        self.tests.append(test)
-        return test
-
-    def create_adaptive(self, name: str, description: str = "") -> AdaptiveTest:
-        test = AdaptiveTest(name, description)
-        self.tests.append(test)
-        return test
-
-    def delete_test(self, index: int):
-        if 0 <= index < len(self.tests):
-            self.tests.pop(index)
-        else:
-            print("Невірний номер тесту.")
-
-    def show_tests(self):
-        if not self.tests:
-            print("Немає тестів.")
-            return
-        for i, t in enumerate(self.tests, start=1):
-            print(f"{i}. {t.name} — {len(t.questions)} питань")
-
-    def find_test(self, name: str):
-        for t in self.tests:
-            if t.name.lower() == name.lower():
-                return t
-        return None
-
-class TestSession:
-    """
-    Третя лабораторна робота.
-    Проходження тесту користувачем.
-    """
-
-    def __init__(self, test: Test):
-        self.test = test
-        self.score = 0
-        self.answers: Dict[int, bool] = {}
-        self.total_time = 0.0
+    # поліморфний метод
+    def ask_question(self, q):
+        q.show()
+        ans = input("Ваша відповідь: ")
+        return q.check(ans)
 
     def start(self):
-        if not self.test.questions:
-            print("Тест не містить питань.")
-            return
+        score = 0
+        for q in self.questions:
+            if self.ask_question(q):
+                score += 1
+        print(f"Результат: {score}/{len(self.questions)}")
 
-        print(f"\nПОЧАТОК ТЕСТУ: {self.test.name}")
-        if self.test.description:
-            print(self.test.description)
 
-        start_time = time.time()
+# -------------------------- TIMED SESSION --------------------------
 
-        for index, question in enumerate(self.test.questions, start=1):
-            print(f"\nПитання {index}/{len(self.test.questions)}")
-            question.show_question()
-            user_answer = input("Ваша відповідь: ")
+class TimedSession(BaseSession):
+    def ask_question(self, q):
+        start = time.time()
+        correct = super().ask_question(q)
+        end = time.time()
+        print(f"Час відповіді: {end - start:.2f} сек")
+        return correct
 
-            correct = question.check_answer(user_answer)
-            self.answers[index] = correct
 
-            if correct:
-                print("Правильно")
-                self.score += 1
+# -------------------------- ADAPTIVE SESSION --------------------------
+
+class AdaptiveSession(BaseSession):
+    def start(self):
+        score = 0
+        difficulty = 1
+
+        for _ in range(5):
+            available = [q for q in self.questions if q.difficulty == difficulty]
+            if not available:
+                available = self.questions
+
+            q = random.choice(available)
+
+            if self.ask_question(q):
+                score += 1
+                difficulty = min(3, difficulty + 1)
             else:
-                print("Неправильно")
+                difficulty = max(1, difficulty - 1)
 
-        self.total_time = time.time() - start_time
-        self.show_result()
-
-    def show_result(self):
-        print("\nРЕЗУЛЬТАТИ ТЕСТУ")
-        print(f"Правильних відповідей: {self.score}/{len(self.test.questions)}")
-        print(f"Час проходження: {self.total_time:.2f} сек")
-
-
+        print(f"Ваш бал: {score}/5")
