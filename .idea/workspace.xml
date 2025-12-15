@@ -4,6 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="f38c3d95-ed07-4950-820c-ce7c145d3dca" name="Changes" comment="Додала екран привітання, перехід між питаннями, оформлення блоками, фінальна сторінка результатів, меню">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/oop_testing3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/oop_testing3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     <list default="true" id="f38c3d95-ed07-4950-820c-ce7c145d3dca" name="Changes" comment="add file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     <list default="true" id="f38c3d95-ed07-4950-820c-ce7c145d3dca" name="Changes" comment="Added inheritance and polymorphism for questions.&#10;Implemented show_question(), check_answer(), and evaluate() in subclasses">
@@ -26,8 +30,22 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="karina" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
+        <entry key="$PROJECT_DIR$" value="main" />
         <entry key="$PROJECT_DIR$" value="julia_branch2" />
       </map>
     </option>
@@ -37,6 +55,12 @@
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
     &quot;assignee&quot;: &quot;vmizyuk&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/vmizyuk/OOP_testing.git&quot;,
+    &quot;accountId&quot;: &quot;541c36f5-6986-40a0-8602-bb87fc47b2c6&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
@@ -69,6 +93,61 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.karina.1.executor": "Run",
+    "Python.karina.12.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "#8 on karina",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="karina.1" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="oop_testing3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/karina.1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="karina.12" type="PythonConfigurationType" factoryName="Python">
+      <module name="oop_testing3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/karina.1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
     "Python.julia.executor": "Run",
     "Python.lab3_tester.executor": "Run",
     "Python.lab4_tester.executor": "Run",
@@ -110,6 +189,47 @@
       <option name="project" value="LOCAL" />
       <updated>1760733089523</updated>
     </task>
+    <task id="LOCAL-00003" summary="add file">
+      <option name="closed" value="true" />
+      <created>1760740823548</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760740823548</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add file">
+      <option name="closed" value="true" />
+      <created>1760741057941</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760741057941</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add file">
+      <option name="closed" value="true" />
+      <created>1761340031310</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1761340031310</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Додала екран привітання, плавний перехід між питаннями, оформлення блоками, фінальна сторінка результатів, меню">
+      <option name="closed" value="true" />
+      <created>1764330232556</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764330232556</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Додала екран привітання, перехід між питаннями, оформлення блоками, фінальна сторінка результатів, меню">
+      <option name="closed" value="true" />
+      <created>1764330560790</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1764330560790</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <option name="localTasksCounter" value="3" />
     <task id="LOCAL-00003" summary="add 6 classes and check">
       <option name="closed" value="true" />
@@ -159,6 +279,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add file" />
+    <MESSAGE value="Додала екран привітання, плавний перехід між питаннями, оформлення блоками, фінальна сторінка результатів, меню" />
+    <MESSAGE value="Додала екран привітання, перехід між питаннями, оформлення блоками, фінальна сторінка результатів, меню" />
+    <option name="LAST_COMMIT_MESSAGE" value="Додала екран привітання, перехід між питаннями, оформлення блоками, фінальна сторінка результатів, меню" />
     <option name="LAST_COMMIT_MESSAGE" value="add file" />
     <MESSAGE value="add 6 classes and check" />
     <MESSAGE value="Added inheritance and polymorphism for questions.&#10;Implemented show_question(), check_answer(), and evaluate() in subclasses" />
