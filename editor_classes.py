@@ -67,3 +67,4 @@ class TestEditor:
 
     def get_questions(self):
         return self.questions
+
